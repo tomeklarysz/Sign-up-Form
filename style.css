@@ -1,11 +1,10 @@
-body {
+body, p {
   margin: 0;
   padding: 0;
 }
 
 #container {
   display: flex;
-  justify-content: space-between;
 }
 
 #left {
@@ -14,4 +13,39 @@ body {
   background-image: url(media/volodymyr-mukhin-nnyHdf-mJGQ-unsplash.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 40px;
+}
+
+#top {
+  flex-wrap: wrap;
+  max-width: 80%;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+#middle {
+  max-width: 50%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  gap: 5rem;
+  /* justify-content: space-between; */
+  margin-top: 15px;
 }
