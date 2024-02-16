@@ -18,9 +18,8 @@ body, p {
 #right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 #top {
@@ -28,14 +27,20 @@ body, p {
   max-width: 80%;
   font-weight: 600;
   font-size: x-large;
+  margin-bottom: 75px;
+  margin-top: 100px;
+  margin-left: 40px;
 }
 
 #middle {
-  max-width: 50%;
   border-top: 1px solid;
-  border-bottom: 1px solid;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mid-header {
+  font-size: larger;
+  font-weight: 600;
 }
 
 .form-container {
@@ -43,9 +48,19 @@ body, p {
   flex-direction: column;
 }
 
-form {
+#form-wrapper {
   display: flex;
   gap: 5rem;
-  /* justify-content: space-between; */
   margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+}
+
+#mid-header,
+form {
+  margin-left: 40px;
+}
+
+input {
+  margin-bottom: 20px;
 }
